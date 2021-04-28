@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(https://t4.ftcdn.net/jpg/03/89/42/53/240_F_389425327_4E3s9IK0wBNfWa2vb0YAEUK0lfajT5BO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 600px;
+    align-items: center;
+}
+
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    letter-spacing: .2em;
+    color: #fff;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+.nav-links li a {
+    margin: 0 15px;
+    transition: all .3s ease 0s;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #e74c3c;
+}
+
+button {
+    border: none;
+    background: #e74c3c;
+    margin-right: 20px;
+    padding: 6px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    transition: all .3s ease 0s;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+.button-div {
+    margin: 50px;
+
+}
+
+.click-class {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #2ecc71;
+    border-radius: 50px;
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.click-class::before {
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2ecc71;
+    border-radius: 50px;
+    z-index: -1;
+    transition: 0.4s;
+
+}
+
+.click-class:hover::before {
+    width: 100%;
+
+}
+
+.Learn-More {
+    font-size: 20px;
+    text-decoration: none;
+    background: #3498db;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 50px;
+    margin: 20px;
+    border: 2px solid #2980b9;
+    position: relative;
+    z-index: 1;
+}
+
+.Learn-More::before {
+    content: "";
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e74c3c;
+    border-radius: 50px;
+    z-index: -1;
+    transition: 0.4s;
+
+}
+
+.Learn-More:hover::before {
+    height: 100%;
+
+}
+
+.about-section {
+    background: rgb(169, 174, 177);
+    padding-top: 40px 0px;
+    margin-top: 10px;
+}
+
+.about-logo img {
+    width: 520px;
+    height: auto;
+    margin: 0px 20px;
+    box-shadow: 6px 5px 5px rgb(128, 107, 107);
+}
+
+.about-text {
+    width: 620px;
+    height: auto;
+    padding: 0px 50px;
+}
+
+.title {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.title h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+    letter-spacing: .1em;
+    padding-top: 10px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.about-text p {
+    color: rgb(80, 71, 71);
+    line-height: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-text h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.social-media {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.row {
+    overflow: auto;
+}
+
+.col {
+    float: left;
+}
+
+.col1 {
+    float: left;
+}
+
+.service-section {
+    background: #95a5a6;
+    padding: 40px 80px;
+    margin-top: 10px;
+}
+
+.services {
+    width: 400px;
+    height: auto;
+    border: 1px solid #fff;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}
+
+.services h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.services p {
+    font-size: 15px;
+    color: rgb(77, 68, 68);
+    line-height: 22px;
+    padding: 0 15px;
+}
+
+.serv-icon i {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #e74c3c;
+    transition: .5s;
+}
+
+.serv-icon i:hover {
+    color: yellow;
+    transform: scale(.8);
+}
+
+.contact {
+    background: #ecf0f1;
+    padding: 15px 15px 15px 80px;
+    box-shadow: 0px 0px 10px #ccc;
+    width: 180px;
+    position: relative;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.con-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    float: left;
+    top: 8px;
+    left: 15px;
+    background: #222;
+    text-align: center;
+    color: #fff;
+    line-height: 55px;
+    font-size: 30px;
+    transition: .5s;
+}
+
+.con-icon i:hover {
+    color: tomato;
+    transform: scale(.8);
+}
+
+.con-text p {
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.contact-section {
+    background: #7f8c8d;
+    padding: 40px 0;
+    margin-top: 10px;
+}
+
+.contact-form {
+    width: 620px;
+    height: auto;
+    margin: 10px auto;
+
+}
+
+.inputTag input {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    margin: 8px 0;
+}
+
+.inputTag textarea {
+    width: 515px;
+}
+
+.inputTag button {
+    width: 83.2%;
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    border-radius: 0px;
+    margin-top: 4px;
+}
+
+.footer {
+    background: #34495e;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-media a {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 62px;
+    background: #71b6fd;
+    color: #000;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+a i {
+    transition: all .3s linear;
+
+}
+
+a:hover i {
+    transform: scale(1.4);
+    color: brown;
+
+}
